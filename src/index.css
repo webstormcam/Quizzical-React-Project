@@ -19,7 +19,7 @@ main{
   background-position: left  bottom, right top;
   background-repeat: no-repeat, no-repeat;
   background-size: 15vw, 20vw ;
-  padding: 15px;
+  padding: 1em;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ text-align: center;
 h1{
   color: #293264;
 font-family: Karla;
-font-size: 31.25px;
+font-size: 2rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -43,7 +43,7 @@ line-height: normal;
 .start-text p{
   color: #293264;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -54,12 +54,12 @@ button{
 background: #4D5B9E;
 text-align: center;
 font-family: Inter;
-font-size: 16px;
+font-size: 1rem;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
   cursor: pointer;
-  padding: 1rem;
+  padding: 1em;
   border-radius: 1em;
   border: none;
   width: 100%;
