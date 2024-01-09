@@ -7,3 +7,17 @@
 body{
   background-color: #f6f7fb;
 }
+
+
+
+.blue-blob{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.yellow-blob{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
