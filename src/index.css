@@ -18,8 +18,13 @@ main{
   background-image: url("src/assets/Blue_Blob.png"), url("src/assets/Yellow_Blob.png");
   background-position: left  bottom, right top;
   background-repeat: no-repeat, no-repeat;
+  background-size: 15vw, 20vw ;
   padding: 15px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .start-text{
