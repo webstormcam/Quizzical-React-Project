@@ -10,14 +10,53 @@ body{
 
 
 
-.blue-blob{
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+
+
+main{
+  display: flex;
+  align-items: center;
+  background-image: url("src/assets/Blue_Blob.png"), url("src/assets/Yellow_Blob.png");
+  background-position: left  bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+  padding: 15px;
+  height: 100vh;
 }
 
-.yellow-blob{
-  position: absolute;
-  top: 0px;
-  right: 0px;
+.start-text{
+text-align: center;
+}
+
+h1{
+  color: #293264;
+font-family: Karla;
+font-size: 31.25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.start-text p{
+  color: #293264;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button{
+  color: #F5F7FB;
+background: #4D5B9E;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1em;
+  border: none;
+  width: 100%;
+  max-width: 200px;
 }
