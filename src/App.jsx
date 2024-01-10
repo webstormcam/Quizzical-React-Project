@@ -1,5 +1,6 @@
 import React from 'react'
 import First from './First.jsx'
+import Second from './Second.jsx';
 import {decode} from 'html-entities';
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <>
-    {allQuestions ? "LOL":<First onClick={grabQuestions}/>}
+    {allQuestions ? <Second/>:<First onClick={grabQuestions}/>}
     </>
   )
 }
