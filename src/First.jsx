@@ -1,8 +1,8 @@
-import blue_blob from "./assets/Blue_Blob.png"
-import yellow_blob from "./assets/Yellow_Blob.png"
+
 
 
 function First(){
+
    return (
     <main>
         <div className="start-text">
