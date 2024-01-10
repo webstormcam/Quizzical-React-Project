@@ -7,7 +7,7 @@ function App() {
 
 
   React.useEffect(() => {
-    fetch('https://opentdb.com/api.php?amount=10')
+    fetch('https://opentdb.com/api.php?amount=10&type=multiple')
        .then((response) => response.json())
        .then((data) => {
           // const capturedData = JSON.stringify(data)
