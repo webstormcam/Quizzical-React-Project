@@ -1,5 +1,7 @@
 import React from 'react'
 import First from './First.jsx'
+import {decode} from 'html-entities';
+
 function App() {
   const [allQuestions, setAllQuestions] = React.useState([])
 
@@ -9,7 +11,9 @@ function App() {
        .then((response) => response.json())
        .then((data) => {
           const capturedData = JSON.stringify(data.results)
-          setAllQuestions(capturedData)
+          const decodedText = decode(capturedData,{level:'html5'})
+          // setAllQuestions(capturedData)
+          console.log(decodedText)
        })
        .catch((err) => {
           console.log(err.message);
@@ -17,7 +21,7 @@ function App() {
  }, []);
 
 
- console.log(allQuestions)
+
 
   return (
     <>
