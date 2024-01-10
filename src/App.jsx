@@ -3,31 +3,36 @@ import First from './First.jsx'
 import {decode} from 'html-entities';
 
 function App() {
-  const [allQuestions, setAllQuestions] = React.useState({})
+  const [allQuestions, setAllQuestions] = React.useState()
 
-
-  React.useEffect(() => {
+  function grabQuestions(){
     fetch('https://opentdb.com/api.php?amount=10&type=multiple')
-       .then((response) => response.json())
-       .then((data) => {
-          // const capturedData = JSON.stringify(data)
-          // const decodedText = decode(capturedData,{level:'html5'})
-          // console.log(decodedText)
-          // const parsedText = JSON.parse(decodedText)
-          setAllQuestions(data.results)
-          // console.log(capturedData)
-       })
-       .catch((err) => {
-          console.log(err.message);
-       });
- }, []);
+    .then((response) => response.json())
+    .then((data) => {
+       // const capturedData = JSON.stringify(data)
+       // const decodedText = decode(capturedData,{level:'html5'})
+       // console.log(decodedText)
+       // const parsedText = JSON.parse(decodedText)
+       setAllQuestions(data.results)
+       // console.log(capturedData)
+    })
+    .catch((err) => {
+       console.log(err.message);
+    });
+  }
 
 
-console.log(allQuestions)
+    React.useEffect(() => {
+      grabQuestions
+   }, []);
+  
+  console.log(allQuestions)
+
+
 
   return (
     <>
-    <First/>
+    {allQuestions ? "LOL":<First onClick={grabQuestions}/>}
     </>
   )
 }
